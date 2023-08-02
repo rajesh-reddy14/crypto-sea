@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MainPage</title>
+
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/styles99.css') }}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+
+</head>
+<body>
+
+
+<!-- header section start -->
+<header>
+    <a href="#" class="logo" > <img src="{{url_for('static', filename='photos/logo1.jpg')}}" class="newlogo"> CryptoHub</a>
+	<nav class="navbar">
+		<a class="active" href="#home">home</a>
+		<a href="#crypto">crypto</a>
+		<a href="#about">about</a>
+		<a href="#service">services</a>
+	</nav>
+	<div class="icons">
+		<i class="fas fa-bars" id="menu-bars"></i>
+		<i class="fas fa-search" id="search-icon"></i>
+        <a href="#" class="fas fa-heart"></a>
+	</div>
+</header>
+
+<!-- header section ends -->
+
+<!-- home section start -->
+<section class="home" id="home">
+	<div class="swiper mySwiper home-slider">
+		<div class=" swiper-wrapper wrapper">
+			<div class="swiper-slide slide">
+				<div class="content">
+					<span>Our crypto offer</span>
+					<h3>Bitcoin Mining</h3>
+					<p>Bitcoin Mining is the method by which Bitcoin and other cryptocurrencies are generated and the transactions involving new coins are verified.</p>
+					<a href="#" class="btn">start now</a>
+				</div>
+				<div class="img">
+					<img src="{{url_for('static', filename='photos/Bitcoin Mining.png')}}">
+				</div>
+			</div>
+
+			<div class="swiper-slide slide">
+				<div class="content">
+					<span>Our crypto offer</span>
+					<h3>Cryptocurrency Analytics</h3>
+					<p>Cryptocurrency Analytics provides top news, insights and articles on Cryptocurrency covering the latest technology developments in the industry across the world.</p>
+					<a href="#" class="btn">start now</a>
+				</div>
+				<div class="img">
+					<img src="{{url_for('static', filename='photos/Cryptocurrency Analytic.png')}}">
+				</div>
+			</div>
+
+			<div class="swiper-slide slide">
+				<div class="content">
+					<span>Our crypto offer</span>
+					<h3>Cryptocurrency Investment</h3>
+					<p>Cryptocurrencies are digital assets people use as investments and for online purchases. You exchange real currency, like dollars, to buy “coins” or “tokens” of a certain kind of cryptocurrency</p>
+					<a href="#" class="btn">start now</a>
+				</div>
+				<div class="img">
+					<img src="{{url_for('static', filename='photos/Cryptocurrency Investment.png')}}">
+				</div>
+			</div>
+		</div>
+		<div class="swiper-pagination"></div>
+	</div>
+</section>
+<!-- home section ends -->
+
+<!-- crypto section starts -->
+
+<section class="crypto" id="crypto">
+	<h3 class="sub-heading"> Our crypto</h3>
+	<h3 class="heading"> popular crypto</h3>
+	<div class="box-container">
+
+		<div class="box">
+		<a href="#" class="fas fa-heart"></a>
+		<a href="#" class="fas fa-eye"></a>
+		<img src="{{url_for('static', filename='photos/bitcoin.png')}}">
+        <h3>Bit Coin</h3>
+        <div class="stars">
+        	<i class="fas fa-star"></i>
+        	<i class="fas fa-star"></i>
+        	<i class="fas fa-star"></i>
+        	<i class="fas fa-star"></i>
+        	<i class="fas fa-star"></i>
+        	<i class="fas fa-star-half-alt"></i>
+        </div> 
+        <span>$58,610.00</span>
+        <a href="https://64841c092c003b2adabeab3e--celebrated-cascaron-206227.netlify.app" class="btn">buy now</a>   
+	</div>
+
+	<div class="box">
+		<a href="#" class="fas fa-heart"></a>
+		<a href="#" class="fas fa-eye"></a>
+		<img src="{{url_for('static', filename='photos/ethereum.png')}}">
+        <h3>Etherum Coin</h3>
+        <div class="stars">
+        	<i class="fas fa-star"></i>
+        	<i class="fas fa-star"></i>
+        	<i class="fas fa-star"></i>
+        	<i class="fas fa-star"></i>
+        	<i class="fas fa-star"></i>
+        	<i class="fas fa-star-half-alt"></i>
+        </div> 
+        <span>$4,747.56</span>
+        <a href="#" class="btn">buy now</a>   
+	</div>
+
+	<div class="box">
+		<a href="#" class="fas fa-heart"></a>
+		<a href="#" class="fas fa-eye"></a>
+		<img src="{{url_for('static', filename='photos/ripple.png')}}">
+        <h3>Ripple Coin</h3>
+        <div class="stars">
+        	<i class="fas fa-star"></i>
+        	<i class="fas fa-star"></i>
+        	<i class="fas fa-star"></i>
+        	<i class="fas fa-star"></i>
+        	<i class="fas fa-star"></i>
+        	<i class="fas fa-star-half-alt"></i>
+        </div> 
+        <span>$1.01</span>
+        <a href="#" class="btn">buy now</a>   
+	</div>
+
+	<div class="box">
+		<a href="#" class="fas fa-heart"></a>
+		<a href="#" class="fas fa-eye"></a>
+		<img src="{{url_for('static', filename='photos/tron.png')}}">
+        <h3>Torn Coin</h3>
+        <div class="stars">
+        	<i class="fas fa-star"></i>
+        	<i class="fas fa-star"></i>
+        	<i class="fas fa-star"></i>
+        	<i class="fas fa-star"></i>
+        	<i class="fas fa-star"></i>
+        	<i class="fas fa-star-half-alt"></i>
+        </div> 
+        <span>$0.100</span>
+        <a href="#" class="btn">buy now</a>   
+	</div>
+
+	<div class="box">
+		<a href="#" class="fas fa-heart"></a>
+		<a href="#" class="fas fa-eye"></a>
+		<img src="{{url_for('static', filename='photos/doge.png')}}">
+        <h3>Doge Coin</h3>
+        <div class="stars">
+        	<i class="fas fa-star"></i>
+        	<i class="fas fa-star"></i>
+        	<i class="fas fa-star"></i>
+        	<i class="fas fa-star"></i>
+        	<i class="fas fa-star"></i>
+        	<i class="fas fa-star-half-alt"></i>
+        </div> 
+        <span>$0.22</span>
+        <a href="#" class="btn">buy now</a>   
+	</div>
+
+	<div class="box">
+		<a href="#" class="fas fa-heart"></a>
+		<a href="#" class="fas fa-eye"></a>
+		<img src="{{url_for('static', filename='photos/binance.png')}}">
+        <h3>Binance Coin</h3>
+        <div class="stars">
+        	<i class="fas fa-star"></i>
+        	<i class="fas fa-star"></i>
+        	<i class="fas fa-star"></i>
+        	<i class="fas fa-star"></i>
+        	<i class="fas fa-star"></i>
+        	<i class="fas fa-star-half-alt"></i>
+        </div> 
+        <span>$67,221.43</span>
+        <a href="#" class="btn">buy now</a>   
+	</div>
+
+</div>
+</section>
+
+<!-- crypto section ends -->
+
+<!-- about section start -->
+
+<section class="about" id="about">
+	<h3 class="sub-heading"> about us</h3>
+	<h3 class="heading"> why choose us?</h3>
+
+	<div class="row">
+		<div class="img">
+			<img src="{{url_for('static', filename='photos/Secure Cryptocurrency.png')}}">
+		</div>
+
+		<div class="content">
+			<h3>best security and fast transactions</h3>
+			<p>Use of Cold Wallets , Safe Transaction Servers , Regular Password Change requirements and so on.</p>
+			<div class="icons-container">
+				<div class="icons">
+					<i class="fas fa-user-secret"></i>
+					<span>free security</span>
+				</div>
+				<div class="icons">
+					<i class="fas fa-dollar-sign"></i>
+					<span>easy payments</span>
+				</div>
+				<div class="icons">
+					<i class="fas fa-headset"></i>
+					<span>24/7 service</span>
+				</div>
+			</div>
+			<a href="#" class="btn">learn more</a>
+		</div>
+	</div>
+</section>
+
+<!-- about section ends -->
+
+<!-- service section starts -->
+
+<section class="service" id="service">
+	<h3 class="sub-heading"> our services</h3>
+	<h3 class="heading"> today's special services</h3>
+
+	<div class="box-container">
+
+		<div class="box">
+			<div class="img">
+				<img src="{{url_for('static', filename='photos/Cryptocurrency Mining Server.png')}}">
+				<a href="#" class="fas fa-heart"></a>
+			</div>
+			<div class="content">
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+				</div>
+				<h3>Cryptocurrency Mining Server</h3>
+				<p>Get your own personalized Crypto Mining Server to get started with Crypto Mining.</p>
+				<a href="#" class="btn">add to service</a>
+				<span class="price">$12.99</span>
+			</div>
+		</div>
+
+			<div class="box">
+			<div class="img">
+				<img src="{{url_for('static', filename='photos/Cryptocurrency Exchange.png')}}">
+				<a href="#" class="fas fa-heart"></a>
+			</div>
+			<div class="content">
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+				</div>
+				<h3>Cryptocurrency Exchange</h3>
+				<p>Get access to a crypto exchange platform to get started with crypto trading.</p>
+				<a href="#" class="btn">add to service</a>
+				<span class="price">$12.99</span>
+			</div>
+		</div>
+
+			<div class="box">
+			<div class="img">
+				<img src="{{url_for('static', filename='photos/Cryptocurrency Trading Bot.png')}}">
+				<a href="#" class="fas fa-heart"></a>
+			</div>
+			<div class="content">
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+				</div>
+				<h3>Cryptocurrency Trading Bot</h3>
+				<p>Get your own personalized crypto trading bot to stay one step ahead in the market. </p>
+				<a href="#" class="btn">add to service</a>
+				<span class="price">$12.99</span>
+			</div>
+		</div>
+
+			<div class="box">
+			<div class="img">
+				<img src="{{url_for('static', filename='photos/Cryptocurrency Wallet.png')}}">
+				<a href="#" class="fas fa-heart"></a>
+			</div>
+			<div class="content">
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+				</div>
+				<h3>Cryptocurrency Wallet</h3>
+				<p>Get your own safe and secure personal crypto wallet to manage all your coins.</p>
+				<a href="#" class="btn">add to service</a>
+				<span class="price">$12.99</span>
+			</div>
+		</div>
+
+			<div class="box">
+			<div class="img">
+				<img src="{{url_for('static', filename='photos/CryptocurrencyStatistics.png')}}">
+				<a href="#" class="fas fa-heart"></a>
+			</div>
+			<div class="content">
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+				</div>
+				<h3>Cryptocurrency Statistics</h3>
+				<p>Get latest news ,market trends and statistics of the coins you are interested in.</p>
+				<a href="#" class="btn">add to service</a>
+				<span class="price">$12.99</span>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- service section ends -->
+
+
+
+<!-- footer section starts -->
+
+<section class="footer">
+	<div class="box-container">
+		<div class="box">
+			<h3>location</h3>
+			<a href="#">INDIA</a>
+			<a href="#">USA</a>
+			<a href="#">CANADA</a>
+			<a href="#">ENGLAND</a>
+			<a href="#">JAPAN</a>
+		</div>
+
+		<div class="box">
+			<h3>quick links</h3>
+			<a href="#">home</a>
+			<a href="#">crypto</a>
+			<a href="#">about</a>
+			<a href="#">services</a>
+			<a href="#">review</a>
+		</div>
+
+		<div class="box">
+			<h3>contact info</h3>
+			<a href="#">+91 9991119999</a>
+			<a href="#">akshaygoud@gmail.com</a>
+			<a href="#">Mysore,Karnataka,India</a>
+		</div>
+
+		<div class="box">
+			<h3>follow us</h3>
+			<a href="#">meta</a>
+			<a href="#">twitter</a>
+			<a href="#">instagram</a>
+			<a href="#">linkedin</a>
+			
+		</div>
+	</div>
+	<div class="credit">copyright @ 2022 by <span>akshaygoud</span></div>
+</section>
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<script src="{{url_for('static', filename='main.js')}}"></script>
+
+</body>
+</html>
